@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+       /* background-color: #f0f0f0; */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.calculator {
+    background-color: #222; 
+    border: 10px solid #2f2e2e; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 50px;
+    /* box-shadow: 0 0 10px rgba(93, 4, 4, 0.1); */
+    box-shadow: 0 0 100px rgba(229, 230, 226, 0.95);
+}
+
+/* Display container for expression and result */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #333;
+    color: rgb(212, 203, 203);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Expression display */
+.expression-display {
+    /* font-size: 1.2em; */
+    font-size: 1em;
+    min-height: 20px;
+    color: #fab026;
+}
+
+/* Main display */
+.display {
+    /* font-size: 2em; */
+    font-size: 1.5em;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.hdg {
+    color: rgb(254, 250, 5);
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+/*
+font-size: 1.5em; => Here em is a relative unit: 
+It is based on the font size of the parent element.
+Calculation:
+If the parent element has a font size of 16px (default browser font size), 
+then: 1.5em=1.5×16px=24px
+If the parent element's font size is 20px, then:
+1.5em=1.5×20px=30px
+*/
+
+.btn {
+    padding: 20px;
+    /* font-size: 2em; */
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000; 
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.equal {
+    padding: 20px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #9657bb; 
+    color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(163, 129, 206); 
+    color: black;
+}
+.equal:hover {
+    background-color: rgb(0, 0, 0); 
+}
